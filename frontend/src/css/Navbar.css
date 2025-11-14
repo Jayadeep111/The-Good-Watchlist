@@ -88,3 +88,41 @@
   transform: scale(1.1);
 }
 
+/* Add to src/css/Navbar.css */
+
+.nav-link.auth-link {
+  background-color: var(--accent-glow-red);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 8px var(--accent-glow-red);
+  transition: transform 0.2s;
+}
+
+.nav-link.auth-link:hover {
+  color: white; /* Override default link hover */
+  transform: scale(1.05);
+}
+
+.nav-link.auth-link::after {
+  display: none; /* Hide the underline effect */
+}
+
+
+/* Add to src/css/Navbar.css */
+
+.nav-link.auth-link-logout {
+  background-color: transparent;
+  border: 1px solid var(--muted);
+  color: var(--muted);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.nav-link.auth-link-logout:hover {
+  background-color: var(--highlight-bg);
+  border-color: var(--accent-glow-red);
+  color: var(--accent-glow-red);
+}

@@ -1,0 +1,81 @@
+/* src/css/AuthForm.css */
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.auth-form h2 {
+  text-align: center;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.form-group input {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--highlight-bg);
+  border-radius: 6px;
+  background-color: var(--bg);
+  color: var(--fg);
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 8px var(--accent-glow-cyan);
+}
+
+.auth-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, var(--accent-glow-red), var(--accent-glow-purple));
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 77, 109, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 14px rgba(255, 77, 109, 0.6);
+}
+
+.error-message {
+  color: var(--accent-glow-red);
+  background-color: rgba(255, 77, 109, 0.1);
+  border: 1px solid var(--accent-glow-red);
+  padding: 0.75rem;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 0.9rem;
+}
